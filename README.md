@@ -1,6 +1,5 @@
 # TarjetasDeFidelidad
 
-
 ## Descripción
 
 Este proyecto es un programa de línea de comandos en **Java 21** que implementa un sistema de fidelidad para una cadena de tiendas de conveniencia.  
@@ -18,7 +17,7 @@ Permite gestionar clientes, registrar compras y calcular puntos de fidelidad con
 
 ### Diagrama UML (simplificado)
 
----
+## ![Diagrama UML](diagrama.png)
 
 ## Requisitos
 
@@ -35,7 +34,6 @@ Permite gestionar clientes, registrar compras y calcular puntos de fidelidad con
 git clone https://github.com/Francoreinoso/TarjetasDeFidelidad
 cd tarjeta-fidelidad
 ```
-
 
 2. Compilar y ejecutar con Maven
 
@@ -74,6 +72,6 @@ Se utilizó JaCoCo con Maven para medir la cobertura de tests.
 
 ## Consideraciones finales
 
-- La persistencia es en memoria, por lo que los datos se pierden al cerrar la aplicación.
+- La persistencia es en memoria, por lo que inicialmente se encuentra vacía. Los datos se pierden al cerrar la aplicación.
 
 - La funcionalidad actual no revierte puntos si se elimina una compra.
