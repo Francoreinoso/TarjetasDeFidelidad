@@ -111,4 +111,11 @@ public class ClienteTest {
         assertEquals(puntosEsperados, cliente.getPuntos());
     }
 
+    @Test
+    public void testObtenerPorPuntos() {
+        assertEquals(NivelFidelidad.BRONCE, NivelFidelidad.obtenerPorPuntos(0));
+        assertEquals(NivelFidelidad.PLATA, NivelFidelidad.obtenerPorPuntos(500));
+        assertEquals(NivelFidelidad.ORO, NivelFidelidad.obtenerPorPuntos(1500));
+        assertEquals(NivelFidelidad.PLATINO, NivelFidelidad.obtenerPorPuntos(3000));
+    }
 }

@@ -28,6 +28,9 @@ public class Compra {
         return cliente;
     }
 
+    public LocalDate getFecha(){
+        return fecha;
+    }
 
     public void procesarCompra() {
         double puntos = Math.floor(monto/100);

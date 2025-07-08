@@ -63,9 +63,8 @@ public class Cliente {
 
         agregarPuntos(puntosGanados);
 
-        if (streakDias == 3) {
-            agregarPuntos(10); // bono
-            streakDias = 0;  // resetear o esperar nueva racha
+        if (streakDias % 3 == 0) {
+            agregarPuntos(10); // bono cada 3 compras seguidas en el mismo día
         }
     }
 

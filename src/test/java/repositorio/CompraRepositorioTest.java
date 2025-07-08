@@ -40,6 +40,21 @@ public class CompraRepositorioTest {
     }
 
     @Test
+    public void testListarTodasLasCompras() {
+        CompraRepositorio repo = new CompraRepositorio();
+        Cliente cliente1 = new Cliente("1", "Juan", "juan@mail.com");
+        Cliente cliente2 = new Cliente("2", "Ana", "ana@mail.com");
+
+        repo.registrar(new Compra("C001", cliente1, 1000, LocalDate.now()));
+        repo.registrar(new Compra("C002", cliente2, 2000, LocalDate.now()));
+        repo.registrar(new Compra("C003", cliente1, 3000, LocalDate.now()));
+
+        List<Compra> todas = repo.listar();
+
+        assertEquals(3, todas.size());
+    }
+
+    @Test
     public void testListarPorCliente() {
         CompraRepositorio repo = new CompraRepositorio();
         Cliente cliente1 = new Cliente("12", "Pablo", "pablo@mail.com");
