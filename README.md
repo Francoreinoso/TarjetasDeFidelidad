@@ -75,3 +75,5 @@ Se utilizó JaCoCo con Maven para medir la cobertura de tests.
 - La persistencia es en memoria, por lo que inicialmente se encuentra vacía. Los datos se pierden al cerrar la aplicación.
 
 - La funcionalidad actual no revierte puntos si se elimina una compra.
+
+- La fecha considera de forma automática la actual, por lo que no se puede ingresar de forma manual.
